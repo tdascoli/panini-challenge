@@ -1,0 +1,25 @@
+.wc1994 {
+
+}
+
+.row1 .sticker {
+  margin-top: 2em;
+}
+
+.row1 .sticker:first-child,
+.row1 .sticker:last-child {
+  margin-top: 0;
+}
+
+.row2 .teamname {
+  text-align: center;
+}
+
+.row3 .sticker {
+  margin-top: 0;
+}
+
+.row3 .sticker:first-child,
+.row3 .sticker:last-child {
+  margin-top: 2em;
+}

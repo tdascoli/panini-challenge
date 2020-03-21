@@ -1,0 +1,24 @@
+.panini {
+  background: $yellow;
+  padding: $padding;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: $padding;
+}
+
+.sticker {
+  border: 2px solid #000000;
+  /*background: rgba(255, 255, 255, .75);*/
+  width: $sticker_width;
+  height: $sticker_height;
+  padding: 2px;
+
+  &.landscape {
+    height: $sticker_width;
+    width: $sticker_height;
+  }
+}

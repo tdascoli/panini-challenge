@@ -10,8 +10,17 @@
 //----------------------------------*/
 
 @import 'modules/_typography.scss';
-@import 'modules/_header.scss';
 @import 'modules/_nav.scss';
 @import 'modules/_sidebar.scss';
 @import 'modules/_main.scss';
 @import 'modules/_footer.scss';
+
+//----------------------------------*\
+// PANINI MODULES
+//----------------------------------*/
+
+@import 'panini/_base.scss';
+@import 'panini/_wc1982.scss';
+@import 'panini/_wc1994.scss';
+@import 'panini/_wc2014.scss';
+@import 'panini/_wc2018.scss';
