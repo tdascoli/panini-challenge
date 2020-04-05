@@ -43,6 +43,9 @@ function GeneratorViewModel(){
           preserveObjectStacking: true
       });
 
+      canvas.setWidth(300);
+      canvas.setHeight(400);
+
       fabric.Image.fromURL(dataURL, function(img) {
           img.set({
               id: 'img',
@@ -53,6 +56,7 @@ function GeneratorViewModel(){
               hasControls: false,
               hasRotatingPoint: false
           });
+          img.scaleToWidth(300);
           canvas.add(img);
           img.bringToFront();
           canvas.renderAll();
@@ -78,13 +82,13 @@ ko.bindingHandlers.canvas = {
 ko.fileBindings.defaultOptions = {
   wrapperClass: 'input-group',
   fileNameClass: 'disabled form-control',
-  noFileText: 'No file chosen',
+  noFileText: 'Kein Bild ausgewählt',
   buttonGroupClass: 'input-group-append',
   buttonClass: 'btn btn-secondary',
   clearButtonClass: 'btn btn-warning',
-  buttonText: 'Choose File',
-  changeButtonText: 'Change',
-  clearButtonText: 'Clear',
+  buttonText: 'Bild auswählen',
+  changeButtonText: 'Ändern',
+  clearButtonText: 'Löschen',
   fileName: true, // show the selected file name?
   clearButton: true, // show clear button?
   onClear: function(fileData, options) {
@@ -95,7 +99,7 @@ ko.fileBindings.defaultOptions = {
 };
 
 // change a default option
-ko.fileBindings.defaultOptions.buttonText = 'Browse';
+ko.fileBindings.defaultOptions.buttonText = 'Auswählen';
 
 
 ko.applyBindings(new GeneratorViewModel());
