@@ -28,6 +28,9 @@ body {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25); }
 
+.bg-dark {
+  background-color: #013299 !important; }
+
 /*
  * Sidebar
  */
@@ -86,6 +89,15 @@ body {
   [role="main"] {
     padding-top: 48px;
     /* Space for fixed navbar */ } }
+
+/*
+ * Panini Upload
+ */
+.image-upload-canvas {
+  border: 1px solid black; }
+
+.image-upload-preview img {
+  width: 100%; }
 
 .panini {
   background: #F4D400;
