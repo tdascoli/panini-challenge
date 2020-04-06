@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/knockout-file-bindings@1.1.0/knockout-file-bindings.css">
     <!-- inject:css -->
+    <link rel="stylesheet" href="css/style.min.css">
     <!-- endinject -->
 </head>
 
@@ -25,8 +26,17 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">
-                              Panini Generator <span class="sr-only">(current)</span>
+                              Dashboard <span class="sr-only">(current)</span>
                             </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="set.html">Panini Upload</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Team Administration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="opponent.html">Opponents</a>
                         </li>
                     </ul>
                 </div>
@@ -34,11 +44,11 @@
 
             <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
 
-                <h1>Panini Generator</h1>
+                <h1>panini bild generator</h1>
 
-                <div class="d-flex flex-wrap">
+                <div class="d-flex">
 
-                    <div class="mr-2">
+                    <div class="w-50 mr-2">
                         <div class="form-group">
                             <label for="image">Positioniere dein Bild per Maus/Touch</label>
                             <div data-bind="fileDrag: panini.image.fileData">
@@ -53,7 +63,7 @@
 
                     </div>
 
-                    <div class="ml-2">
+                    <div class="w-50 ml-2">
                       <div class="form-group">
                           <label for="player">Panini auswählen</label>
                           <select id="player"
@@ -96,6 +106,7 @@
     <script src="https://cdn.jsdelivr.net/npm/knockout-file-bindings@1.1.0/knockout-file-bindings.min.js"></script>
 
     <!-- inject:js -->
+    <script src="js/ko/ko.panini-challenge.min.js"></script>
     <!-- endinject -->
 </body>
 
