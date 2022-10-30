@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Panini Challenge",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "del": "^4.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^3.1.0",
